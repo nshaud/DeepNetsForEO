@@ -1,0 +1,4 @@
+[submodule "caffe"]
+	path = caffe
+	url = https://github.com/nshaud/caffe
+	branch = upsample
