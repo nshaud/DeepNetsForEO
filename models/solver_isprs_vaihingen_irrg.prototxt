@@ -1,0 +1,22 @@
+net: "solver_isprs_vaihingen_irrg.prototxt"
+solver_mode: GPU
+max_iter: 200000
+snapshot: 2000
+snapshot_prefix: "snapshots/" # EDIT ME : where to save the snapshots
+display: 100
+average_loss: 100
+
+
+# Simple SGD with lr = 0.01 and momentum
+solver_type: SGD
+base_lr: 0.01
+momentum: 0.9
+
+# Adapt according to the dataset sizes (one step ~= 10 epochs)
+lr_policy: "step"
+stepsize: 25000 
+gamma: 0.1
+
+weight_decay: 0.0005
+
+test_initialization: false
