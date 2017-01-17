@@ -35,11 +35,18 @@ In addition to our models, we provide several Jupyter notebooks to :
 
 ## Requirements
 
-You need to compile and use our Caffe fork (including Alex Kendall's Unpooling Layer) to use the provided models. Training on GPU is recommended but not mandatory.
+You need to compile and use our Caffe fork (including Alex Kendall's Unpooling Layer) to use the provided models. Training on GPU is recommended but not mandatory. You can download the fork by cloning this repository and executing :
+```
+git submodule init
+
+git submodule update
+```
+
+Our Caffe version will be available in `caffe` folder. You can then follow with the usual [compilation instructions](http://caffe.berkeleyvision.org/installation.html#compilation).
 
 ## References
 
-If you use this work for your projects, please take the time to cite our (soon to be published) ACCV'16 paper :
+If you use this work for your projects, please take the time to cite our ACCV'16 paper :
 
 [https://arxiv.org/abs/1609.06846](https://arxiv.org/abs/1609.06846) Nicolas Audebert, Bertrand Le Saux and Sébastien Lefèvre, **Semantic Segmentation of Earth Observation Data Using Multimodal and Multi-scale Deep Networks**, *Asian Conference on Computer Vision*, 2016.
 ```
