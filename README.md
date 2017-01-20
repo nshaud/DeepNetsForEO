@@ -24,7 +24,7 @@ We provide a deep neural network based on the [SegNet architecture](https://arxi
   * The network definition (the architecture) in the prototxt format (for the [Caffe](https://github.com/bvlc/caffe) framework)
   * Pre-trained weights on the [ISPRS Vaihingen](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) dataset (IRRG only)
   
-[segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](https://filesender.renater.fr/?s=download&token=414d7be2-fba7-b07e-9e10-1471e566cafc): pre-trained model on the ISPRS Vaihingen dataset (IRRG training tiles)
+[segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](https://drive.google.com/open?id=0B8XVGOkhuqDTTmh2UDFlYWdpV28): pre-trained model on the ISPRS Vaihingen dataset (IRRG training tiles)
 
 ### Jupyter notebooks
 
