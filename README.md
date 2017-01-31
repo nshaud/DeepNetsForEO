@@ -33,6 +33,13 @@ In addition to our models, we provide several Jupyter notebooks to :
   * train a deep network for semantic labeling of remote sensing images
   * apply a deep network to label automatically remote sensing data
 
+Configuration variables are grouped in the `config.py` file. This the one you **have to edit** to suit your needs. The scripts that can be used are :
+  * Extract images : use a sliding window to divide high resolution images in smaller patches
+  * Create LMDB : convert the small patches into LMDB for faster Caffe processing
+  * Training : train a model on the LMDB
+
+Those scripts are available either using Python or Jupyter. Two inference scripts are available but only for Python (though they can easily be imported in Jupyter).
+
 ## Requirements
 
 You need to compile and use our Caffe fork (including Alex Kendall's Unpooling Layer) to use the provided models. Training on GPU is recommended but not mandatory. You can download the fork by cloning this repository and executing :
