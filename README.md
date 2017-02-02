@@ -23,7 +23,7 @@ In this work, we show that deep learning allows a computer to parse and classify
 We provide a deep neural network based on the [SegNet architecture](https://arxiv.org/abs/1511.02680) for semantic labeling of Earth Observation images. The network is separated in two files :
   * The network definition (the architecture) in the prototxt format (for the [Caffe](https://github.com/bvlc/caffe) framework)
   * Pre-trained weights on the [ISPRS Vaihingen](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) dataset (IRRG only)
-  
+
 [segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](https://drive.google.com/open?id=0B8XVGOkhuqDTTmh2UDFlYWdpV28): pre-trained model on the ISPRS Vaihingen dataset (IRRG training tiles)
 
 ### Jupyter notebooks
@@ -34,15 +34,15 @@ In addition to our models, we provide several Jupyter notebooks to :
   * apply a deep network to label automatically remote sensing data
 
 Configuration variables are grouped in the `config.py` file. This the one you **have to edit** to suit your needs. The scripts that can be used are :
-  * Extract images : use a sliding window to divide high resolution images in smaller patches
-  * Create LMDB : convert the small patches into LMDB for faster Caffe processing
-  * Training : train a model on the LMDB
+  * `Extract images` : use a sliding window to divide high resolution images in smaller patches
+  * `Create LMDB` : convert the small patches into LMDB for faster Caffe processing
+  * `Training` : train a model on the LMDB
 
 Those scripts are available either using Python or Jupyter. Two inference scripts are available but only for Python (though they can easily be imported in Jupyter).
 
 ## Requirements
 
-You need to compile and use our Caffe fork (including Alex Kendall's Unpooling Layer) to use the provided models. Training on GPU is recommended but not mandatory. You can download the fork by cloning this repository and executing :
+You need to compile and use our Caffe fork (including [Alex Kendall's Unpooling Layer](https://github.com/alexgkendall/caffe-segnet)) to use the provided models. Training on GPU is recommended but not mandatory. You can download the fork by cloning this repository and executing :
 ```
 # Clone this repository
 git clone https://github.com/nshaud/DeepNetsForEO.git
