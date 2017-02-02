@@ -44,6 +44,12 @@ Those scripts are available either using Python or Jupyter. Two inference script
 
 You need to compile and use our Caffe fork (including Alex Kendall's Unpooling Layer) to use the provided models. Training on GPU is recommended but not mandatory. You can download the fork by cloning this repository and executing :
 ```
+# Clone this repository
+git clone https://github.com/nshaud/DeepNetsForEO.git
+
+cd DeepsNetsForEO/
+
+# Initialize and checkout our custom Caffe fork (upsample branch !)
 git submodule init
 
 git submodule update
