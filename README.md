@@ -1,7 +1,7 @@
 # Deep learning for Earth Observation
 
-![](https://lut.im/hCESNeToVY/qrK3KIIi1gcF8ZJD)
-![](https://lut.im/gaJPw4ny09/7YziLBwPR2o0kdKd)
+![http://www.onera.fr/en/dtim](https://lut.im/hCESNeToVY/qrK3KIIi1gcF8ZJD)
+![https://www-obelix.irisa.fr/](https://lut.im/gaJPw4ny09/7YziLBwPR2o0kdKd)
 ![](https://lut.im/i5zoaeshn2/w7IKoiAfoNZGDVmq)
 
 This repository contains code, network definitions and pre-trained models for working on remote sensing images using deep learning.
@@ -24,7 +24,7 @@ We provide a deep neural network based on the [SegNet architecture](https://arxi
   * The network definition (the architecture) in the prototxt format (for the [Caffe](https://github.com/bvlc/caffe) framework)
   * Pre-trained weights on the [ISPRS Vaihingen](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) dataset (IRRG only)
 
-[segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](https://drive.google.com/open?id=0B8XVGOkhuqDTTmh2UDFlYWdpV28): pre-trained model on the ISPRS Vaihingen dataset (IRRG training tiles)
+[segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](http://www.irisa.fr/obelix/files/audebert/segnet_vaihingen_128x128_fold1_iter_60000.caffemodel) ([backup link](https://drive.google.com/open?id=0B8XVGOkhuqDTTmh2UDFlYWdpV28)): pre-trained model on the ISPRS Vaihingen dataset (IRRG training tiles)
 
 ### Jupyter notebooks
 
