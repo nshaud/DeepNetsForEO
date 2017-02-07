@@ -10,6 +10,8 @@ We build on the [SegNet architecture](https://github.com/alexgkendall/SegNet-Tut
 
 ## Motivation
 
+![](https://lut.im/YriLDf2Lb9/gaB9VlcBgZ6yy6l6.jpg)
+
 Earth Observation consists in visualizing and understanding our planet thanks to airborne and satellite data. Thanks to the release of large amounts of both satellite (e.g. Sentinel and Landsat) and airborne images, Earth Observation entered into the Big Data era. Many applications could benefit from automatic analysis of those datasets : cartography, urban planning, traffic analysis, biomass estimation and so on. Therefore, lots of progresses have been made to use machine learning to help us have a better understanding of our Earth Observation data.
 
 In this work, we show that deep learning allows a computer to parse and classify objects in an image and can be used for automatical cartography from remote sensing data. Especially, we provide examples of deep fully convolutional networks that can be trained for semantic labeling for airborne pictures of urban areas.
