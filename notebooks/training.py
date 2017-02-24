@@ -45,7 +45,7 @@ def convolution_unit(input_layer, k, pad, planes, lr_mult=1, decay_mult=1):
                          weight_filler=dict(type='msra'),
                          param={'lr_mult': lr_mult, 'decay_mult': decay_mult}
                         )
-    bn = L.BatchNorm(conv, in_place=True, param={'lr_mult': lr_mult})
+    bn = L.BatchNorm(conv, in_place=True)
     scale = L.Scale(conv, in_place=True, bias_term=True,\
                     param=[{'lr_mult': lr_mult},{'lr_mult': 2*lr_mult}])
     relu = L.ReLU(conv, in_place=True)
