@@ -28,6 +28,10 @@ We provide a deep neural network based on the [SegNet architecture](https://arxi
 
 [segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](http://www.irisa.fr/obelix/files/audebert/segnet_vaihingen_128x128_fold1_iter_60000.caffemodel) ([backup link](https://drive.google.com/open?id=0B8XVGOkhuqDTTmh2UDFlYWdpV28)): pre-trained model on the ISPRS Vaihingen dataset (IRRG training tiles)
 
+### Data
+
+Our example models are trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html). We use the IRRG tiles (8bit format). The ground truth files are color-encoded and should be converted to the numerical labels, e.g. {0,1,2,3,4,5} instead of {[255,255,255],[0,0,255],[0,255,255],[0,255,0],[255,0,255],[255,0,0]}.
+
 ### Jupyter notebooks
 
 In addition to our models, we provide several Jupyter notebooks to :
