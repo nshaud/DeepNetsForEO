@@ -1,4 +1,4 @@
-net: "solver_isprs_vaihingen_irrg.prototxt"
+net: "segnet_isprs_vaihingen_irrg.prototxt"
 solver_mode: GPU
 max_iter: 200000
 snapshot: 2000
