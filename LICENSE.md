@@ -43,14 +43,10 @@ Multi-scale Deep Networks", Asian Conference on Computer Vision, 2016.
 
 For research and non commercial purposes, all the network weights and documentation available at github.com/nshaud/DeepNetsForEO are released under the Creative Commons BY-NC-SA license, which implies:
 - Licensees may copy, distribute, display and perform the work and make derivative works and remixes based on it only if they give the author or licensor the credits (attribution) in the following manner: acknowledgement of the authors and paper citation as described on the repository page site, or if not available by citing:
--
-- ```
-- Nicolas Audebert, Bertrand Le Saux and Sébastien Lefèvre
-- "Semantic Segmentation of Earth Observation Data Using Multimodal and
-- Multi-scale Deep Networks", Asian Conference on Computer Vision, 2016.
-- ```
--
-- - Licensees may distribute derivative works only under a license identical ("not more restrictive") to the license that governs the original work. (See also copyleft.) Without share-alike, derivative works might be sublicensed with compatible but more restrictive license clauses, e.g. CC BY to CC BY-NC.)
-- - Licensees may copy, distribute, display, and perform the work and make derivative works and remixes based on it only for non-commercial purposes.
-- The detailed license is available at creativecommons.org.
-- 
+```
+Nicolas Audebert, Bertrand Le Saux and Sébastien Lefèvre
+"Semantic Segmentation of Earth Observation Data Using Multimodal and ,Multi-scale Deep Networks", Asian Conference on Computer Vision, 2016.
+```
+- Licensees may distribute derivative works only under a license identical ("not more restrictive") to the license that governs the original work. (See also copyleft.) Without share-alike, derivative works might be sublicensed with compatible but more restrictive license clauses, e.g. CC BY to CC BY-NC.)
+- Licensees may copy, distribute, display, and perform the work and make derivative works and remixes based on it only for non-commercial purposes.
+The detailed license is available at creativecommons.org.
