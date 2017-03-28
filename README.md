@@ -23,14 +23,18 @@ In this work, we show that deep learning allows a computer to parse and classify
 ![](https://lut.im/pexiZxMS7n/MlVhwOQXHz1Va0Yl)
 
 We provide a deep neural network based on the [SegNet architecture](https://arxiv.org/abs/1511.02680) for semantic labeling of Earth Observation images. The network is separated in two files :
-  * The network definition (the architecture) in the prototxt format (for the [Caffe](https://github.com/bvlc/caffe) framework)
-  * Pre-trained weights on the [ISPRS Vaihingen](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) dataset (IRRG only)
+  * The network definition (the architecture) in the prototxt format (for the [Caffe](https://github.com/bvlc/caffe) framework),
+  * Pre-trained weights on the [ISPRS Vaihingen](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) dataset and [ISPRS Potsdam](http://www2.isprs.org/potsdam-2d-semantic-labeling.html) datasets.
 
-[segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](http://www.irisa.fr/obelix/files/audebert/segnet_vaihingen_128x128_fold1_iter_60000.caffemodel) ([backup link](https://drive.google.com/open?id=0B8XVGOkhuqDTTmh2UDFlYWdpV28)): pre-trained model on the ISPRS Vaihingen dataset (trained on tiles 1, 3, 5, 7, 11, 13, 15, 17, 21, 23, 26, 28, 30, validated on tiles 32, 34, 37).
+All the pre-trained weights can be found on the [OBELIX team website](http://www-obelix.irisa.fr/software/) ([backup link](https://drive.google.com/open?id=0B8XVGOkhuqDTaUE0OUJNQ21kOWc)).
+
+Examples :
+  - [segnet_vaihingen_128x128_fold1_iter_60000.caffemodel (112.4 Mo)](http://www.irisa.fr/obelix/files/audebert/segnet_vaihingen_128x128_fold1_iter_60000.caffemodel) ([backup link](https://drive.google.com/open?id=0B8XVGOkhuqDTTmh2UDFlYWdpV28)): pre-trained model on the ISPRS Vaihingen dataset (trained on tiles 1, 3, 5, 7, 11, 13, 15, 17, 21, 23, 26, 28, 30, validated on tiles 32, 34, 37).
+  - [potsdam_rgb_128_fold1_iter_80000.caffemodel (112.4 Mo)]() ([backup link](https://drive.google.com/open?id=0B8XVGOkhuqDTT0lCbVBDVEtCTXM)) : pre-trained model on the ISPRS Potsdam dataset (RGB tiles, trained on (3, 12), (6, 8), (4, 11), (3, 10), (7, 9), (4, 10), (6, 10), (7, 7), (5, 10), (7, 11), (2, 12), (6, 9), (5, 11), (6, 12), (7, 8), (2, 10), (6, 7), (6, 11), validated on tile (2, 11), (7, 12), (3, 11), (5, 12), (7, 10), (4, 12)).
 
 ### Data
 
-Our example models are trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html). We use the IRRG tiles (8bit format). The ground truth files are color-encoded and should be converted to the numerical labels, e.g. {0,1,2,3,4,5} instead of {[255,255,255],[0,0,255],[0,255,255],[0,255,0],[255,0,255],[255,0,0]}.
+Our example models are trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) and [ISPRS Potsdam dataset](). We use the IRRG tiles (8bit format) and we build 8bit composite images using the DSM, NDSM and NDVI. The ground truth files are color-encoded and should be converted to the numerical labels, e.g. {0,1,2,3,4,5} instead of {[255,255,255],[0,0,255],[0,255,255],[0,255,0],[255,0,255],[255,0,0]} using the `convert_gt.py` script.
 
 ### Jupyter notebooks
 
