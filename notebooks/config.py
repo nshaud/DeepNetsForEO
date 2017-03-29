@@ -37,6 +37,21 @@ FOLDER_SUFFIX = '_fold1'
 BASE_FOLDER = BASE_DIR + DATASET + '/'
 BGR = True
 label_values = ['imp_surfaces', 'building', 'low_vegetation', 'tree', 'car', 'clutter']
+# Color palette
+palette = {0: (255, 255, 255),  # Impervious surfaces (white)
+           1: (0, 0, 255),      # Buildings (dark blue)
+           2: (0, 255, 255),    # Low vegetation (light blue)
+           3: (0, 255, 0),      # Tree (green)
+           4: (255, 255, 0),    # Car (yellow)
+           5: (255, 0, 0),      # Clutter (red)
+           6: (0, 0, 0)}        # Unclassified (black)
+invert_palette = {(255, 255, 255): 0,  # Impervious surfaces (white)
+                  (0, 0, 255): 1,      # Buildings (dark blue)
+                  (0, 255, 255): 2,    # Low vegetation (light blue)
+                  (0, 255, 0): 3,      # Tree (green)
+                  (255, 255, 0): 4,    # Car (yellow)
+                  (255, 0, 0): 5,      # Clutter (red)
+                  (0, 0, 0): 6}        # Unclassified (black)
 NUMBER_OF_CLASSES = len(label_values)
 
 """

@@ -4,18 +4,12 @@ from skimage import io
 from tqdm import tqdm
 import argparse
 import os
+from config import palette, invert_palette
 
 
-def convert_to_color(arr_2d):
+def convert_to_color(arr_2d, palette=palette):
     """ grayscale labels to RGB-color encoding """
     arr_3d = np.zeros((arr_2d.shape[0], arr_2d.shape[1], 3), dtype=np.uint8)
-    palette = {0: (255, 255, 255),  # Impervious surfaces (white)
-               1: (0, 0, 255),      # Buildings (dark blue)
-               2: (0, 255, 255),    # Low vegetation (light blue)
-               3: (0, 255, 0),      # Tree (green)
-               4: (255, 255, 0),    # Car (yellow)
-               5: (255, 0, 0),      # Clutter (red)
-               6: (0, 0, 0)}        # Unclassified (black)
 
     for c, i in palette.items():
         m = arr_2d == c
@@ -24,16 +18,9 @@ def convert_to_color(arr_2d):
     return arr_3d
 
 
-def convert_from_color(arr_3d):
+def convert_from_color(arr_3d, palette=invert_palette):
     """ RGB-color encoding to grayscale labels """
     arr_2d = np.zeros((arr_3d.shape[0], arr_3d.shape[1]), dtype=np.uint8)
-    palette = {(0, 0, 0): 0,      # Impervious surfaces (white)
-               (0, 0, 255): 1,    # Buildings (dark blue)
-               (0, 255, 255): 2,  # Low vegetation (light blue)
-               (0, 255, 0): 3,    # Tree (green)
-               (255, 255, 0): 4,  # Car (yellow)
-               (255, 0, 0): 5,    # Clutter (red)
-               (0, 0, 0): 6}      # Unclassified (black)
 
     for c, i in palette.items():
         m = np.all(arr_3d == np.array(c).reshape(1, 1, 3), axis=2)
