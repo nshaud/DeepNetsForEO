@@ -36,7 +36,8 @@ DATASET = 'Vaihingen'
 FOLDER_SUFFIX = '_fold1'
 BASE_FOLDER = BASE_DIR + DATASET + '/'
 BGR = True
-label_values = ['imp_surfaces', 'building', 'low_vegetation', 'tree', 'car', 'clutter']
+label_values = ['imp_surfaces', 'building', 'low_vegetation',
+                'tree', 'car', 'clutter']
 # Color palette
 palette = {0: (255, 255, 255),  # Impervious surfaces (white)
            1: (0, 0, 255),      # Buildings (dark blue)
@@ -80,22 +81,24 @@ NUMBER_OF_CLASSES = len(label_values)
 """
 if DATASET == 'Potsdam':
     folders = [
-           ('labels', BASE_FOLDER + 'gts_numpy/', 'top_potsdam_{}_{}_label.png'),
-           ('rgb', BASE_FOLDER + '2_Ortho_RGB/', 'top_potsdam_{}_{}_RGB.tif'),
-           ('irrg', BASE_FOLDER + 'Y_Ortho_IRRG/', 'top_potsdam_{}_{}_IRRG.tif'),
-           ('irgb', BASE_FOLDER + 'X_Ortho_IRGB/', 'top_potsdam_{}_{}_IRGB.tif')
+        ('labels', BASE_FOLDER + 'gts_numpy/', 'top_potsdam_{}_{}_label.png'),
+        ('rgb', BASE_FOLDER + '2_Ortho_RGB/', 'top_potsdam_{}_{}_RGB.tif'),
+        ('irrg', BASE_FOLDER + 'Y_Ortho_IRRG/', 'top_potsdam_{}_{}_IRRG.tif'),
+        ('irgb', BASE_FOLDER + 'X_Ortho_IRGB/', 'top_potsdam_{}_{}_IRGB.tif')
     ]
-    train_ids = [(3, 12), (6, 8), (4, 11), (3, 10), (7, 9), (4, 10), (6, 10), (7, 7),
-             (5, 10), (7, 11), (2, 12), (6, 9), (5, 11), (6, 12), (7, 8), (2, 10),
-             (6, 7), (6, 11), (4, 12)]
+    train_ids = [
+         (3, 12), (6, 8), (4, 11), (3, 10), (7, 9), (4, 10), (6, 10), (7, 7),
+         (5, 10), (7, 11), (2, 12), (6, 9), (5, 11), (6, 12), (7, 8), (2, 10),
+         (6, 7), (6, 11), (4, 12)]
     test_ids = [(2, 11), (7, 12), (3, 11), (5, 12), (7, 10)]
-    
+
 elif DATASET == 'Vaihingen':
     folders = [
-           ('labels', BASE_FOLDER + 'gts_numpy/', 'top_mosaic_09cm_area{}.png'),
-           ('irrg', BASE_FOLDER + 'top/', 'top_mosaic_09cm_area{}.tif')
+        ('labels', BASE_FOLDER + 'gts_numpy/', 'top_mosaic_09cm_area{}.png'),
+        ('irrg', BASE_FOLDER + 'top/', 'top_mosaic_09cm_area{}.tif')
     ]
-    train_ids = [(1,), (3,), (5,), (7,), (11,), (13,), (15,), (17,),(21,), (23,), (26,), (28,), (30,)]
+    train_ids = [(1,), (3,), (5,), (7,), (11,), (13,), (15,),
+                 (17,),(21,), (23,), (26,), (28,), (30,)]
     test_ids = [(32,), (34,), (37,)]
 
 # Build the target folder name
@@ -104,7 +107,7 @@ DATASET_DIR = BASE_FOLDER + DATASET.lower() + '_{}_{}_{}'.format(
 # Add the suffix is not empty
 if FOLDER_SUFFIX:
     DATASET_DIR += FOLDER_SUFFIX
-    
+
 DATASET_DIR += '/'
 
 ######################## LMDB PARAMETERS ###############################
