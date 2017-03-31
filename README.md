@@ -74,15 +74,17 @@ If you use this work for your projects, please take the time to cite our ACCV'16
 [https://arxiv.org/abs/1609.06846](https://arxiv.org/abs/1609.06846) Nicolas Audebert, Bertrand Le Saux and Sébastien Lefèvre, **Semantic Segmentation of Earth Observation Data Using Multimodal and Multi-scale Deep Networks**, *Asian Conference on Computer Vision*, 2016.
 ```
 @inproceedings{audebert_semantic_2016,
-    address = {Taipei, Taiwan},
-    title = {Semantic {Segmentation} of {Earth} {Observation} {Data} {Using} {Multimodal} and {Multi}-scale {Deep} {Networks}},
-    url = {https://hal.archives-ouvertes.fr/hal-01360166},
-    urldate = {2016-10-13},
-    booktitle = {Asian {Conference} on {Computer} {Vision} ({ACCV}16)},
-    author = {Audebert, Nicolas and Le Saux, Bertrand and Lefèvre, Sébastien},
-    month = nov,
-    year = {2016},
-    keywords = {computer vision, data fusion, Earth observation, Neural networks, remote sensing},
+	title = {Semantic {Segmentation} of {Earth} {Observation} {Data} {Using} {Multimodal} and {Multi}-scale {Deep} {Networks}},
+	url = {https://link.springer.com/chapter/10.1007/978-3-319-54181-5_12},
+	doi = {10.1007/978-3-319-54181-5_12},
+	language = {en},
+	urldate = {2017-03-31},
+	booktitle = {Computer {Vision} – {ACCV} 2016},
+	publisher = {Springer, Cham},
+	author = {Audebert, Nicolas and Le Saux, Bertrand and Lefèvre, Sébastien},
+	month = nov,
+	year = {2016},
+	pages = {180--196}
 }
 ```
 ## License
