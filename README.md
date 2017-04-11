@@ -89,7 +89,7 @@ If you use this work for your projects, please take the time to cite our ACCV'16
 ```
 ## License
 
-Code (scripts and Jupyter notebooks) are released under the MIT license for non-commercial and research purposes **only**. For commercial purposes, please contact the authors.
+Code (scripts and Jupyter notebooks) are released under the GPLv3 license for non-commercial and research purposes **only**. For commercial purposes, please contact the authors.
 
 ![https://creativecommons.org/licenses/by-nc-sa/3.0/](https://i.creativecommons.org/l/by-nc-sa/3.0/nl/88x31.png) The network weights are released under Creative-Commons BY-NC-SA. For commercial purposes, please contact the authors.
 
