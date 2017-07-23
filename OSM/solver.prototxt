@@ -1,0 +1,16 @@
+net: 'potsdam_irrg_osm_fusenet.prototxt'
+base_lr: 0.01
+momentum: 0.9
+lr_policy: 'multistep'
+stepvalue: 60000
+stepvalue: 120000
+stepvalue: 170000
+gamma: 0.1
+display: 100
+average_loss: 100
+max_iter: 200001
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: 'potsam_irrg_osm_fusenet'
+solver_mode: GPU
+solver_type: SGD
