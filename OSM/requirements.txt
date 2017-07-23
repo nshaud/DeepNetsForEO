@@ -1,0 +1,6 @@
+tqdm==4.7.6
+scikit_image==0.9.3
+scipy==0.16.1
+numpy==1.10.4
+GDAL==2.2.1
+
