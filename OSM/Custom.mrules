@@ -1,0 +1,67 @@
+// Wireframe rules
+
+// Created by Igor Brejc
+// Released under the Creative Commons Attribution-ShareAlike 3.0 License (http://creativecommons.org/licenses/by-sa/3.0/)
+
+features
+	lines
+		all lines : 
+		small roads : highway=service OR highway=pedestrian OR highway=track OR highway=footway OR highway=cycleway OR highway=path OR highway=steps
+		major roads : highway=primary OR highway=secondary OR highway=tertiary OR highway=motorway
+		medium roads : highway=unclassified OR (highway=construction AND construction=unclassified) OR highway=residential OR (highway=construction AND construction=residential) OR highway=living_street
+	areas
+		all areas : 
+		all buildings: building
+		vegetation : natural=wood OR natural=tree_row OR natural=tree OR natural=scrub OR natural=heath OR natural=grassland OR natural=fell// OR landuse=farmland OR landuse=forest OR landuse=grass OR landuse=greenfield OR landuse=meadow OR landuse=orchard OR landuse=village_green OR landuse=vineyard
+		water : natural=water OR natural=glacier OR natural=bay OR natural=beach OR natural=coastline OR natural=spring OR natural=hot_spring OR natural=geyser
+
+properties
+	//map-background-color : #181818
+	map-background-color : black
+	map-background-opacity : 1
+	border-style: none
+
+rules
+	target : *roads
+		if : major roads				
+			define
+				line-color: white
+				line-width : 11:5;12:1;15:5;18:40
+		elseif : medium roads
+			define
+				line-color: white
+				line-width : 10:2;11:1;13:2;15:2;18:15
+		else
+			define
+				line-color: white
+				line-width : 10:1;13:1;15:1;18:6
+		draw : line
+
+	target : vegetation
+		define
+			fill-color : green
+			fill-opacity: 1
+			line-color: green
+			line-opacity: 0
+		draw: fill
+		draw: line
+
+	target : all buildings
+		define
+			border-width: 1
+			fill-color : blue
+			fill-opacity: 1
+			line-color: blue
+			line-opacity: 1
+		draw: fill
+		draw: line
+
+	target : water
+		define
+			fill-color : red
+			fill-opacity: 1
+			border-width: 1
+			line-color: red
+			line-opacity: 1
+		draw: fill
+		draw: line
