@@ -1,8 +1,8 @@
 # Deep learning for Earth Observation
 
-![http://www.onera.fr/en/dtim](https://lut.im/hCESNeToVY/qrK3KIIi1gcF8ZJD)
-![https://www-obelix.irisa.fr/](https://lut.im/gaJPw4ny09/7YziLBwPR2o0kdKd)
-![](https://lut.im/i5zoaeshn2/w7IKoiAfoNZGDVmq)
+![http://www.onera.fr/en/dtim](https://lut.im/qwL8UPM0en/soXh7XtiPp4IoML8.png)
+![https://www-obelix.irisa.fr/](https://lut.im/D9OHdqk6rK/Mod6HUGCtwjY00Vk.png)
+![](https://lut.im/5UpsUhIzgE/Fa6XCquMRsnHwjHu.png)
 
 This repository contains code, network definitions and pre-trained models for working on remote sensing images using deep learning.
 
