@@ -28,7 +28,7 @@ All the pre-trained weights can be found on the [OBELIX team website](http://www
 
 ### Data
 
-Our example models are trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) and [ISPRS Potsdam dataset](http://www2.isprs.org/potsdam-2d-semantic-labeling.html). We use the IRRG tiles (8bit format) and we build 8bit composite images using the DSM, NDSM and NDVI. The ground truth files are color-encoded and should be converted to the numerical labels, e.g. {0,1,2,3,4,5} instead of {[255,255,255],[0,0,255],[0,255,255],[0,255,0],[255,0,255],[255,0,0]} using the `convert_gt.py` script.
+Our example models are trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) and [ISPRS Potsdam dataset](http://www2.isprs.org/potsdam-2d-semantic-labeling.html). We use the IRRG tiles (8bit format) and we build 8bit composite images using the DSM, NDSM and NDVI. The ground truth files are color-encoded and should be converted to the numerical labels, e.g. {0,1,2,3,4,5} instead of {[255,255,255],[0,0,255],[0,255,255],[0,255,0],[255,255,0],[255,0,0]} using the `convert_gt.py` script.
 
 You can either use our script from the `OSM` folder (based on the [Maperitive](http://maperitive.net/) software) to generate OpenStreetMap rasters from the images, or download the OSM tiles from Potsdam [here](https://drive.google.com/open?id=0B8XVGOkhuqDTdGNibWJPeTcxLVE).
 
