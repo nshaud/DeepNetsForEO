@@ -20,7 +20,7 @@ In this work, we show that deep learning allows a computer to parse and classify
 
 ### Deep networks
 
-![](https://lut.im/pexiZxMS7n/MlVhwOQXHz1Va0Yl)
+![](https://framapic.org/QcKMKNoS3NNx/HaV0eslfix6P)
 
 We provide a deep neural network based on the [SegNet architecture](https://arxiv.org/abs/1511.02680) for semantic labeling of Earth Observation images.
 
