@@ -76,3 +76,5 @@ See `LICENSE.md` for more details.
 This work has been conducted at ONERA ([DTIM](http://www.onera.fr/en/dtim)) and IRISA ([OBELIX team](https://www-obelix.irisa.fr/)), with the support of the joint Total-ONERA research project NAOMI.
 
 The Vaihingen data set was provided by the German Society for Photogrammetry, Remote Sensing and Geoinformation (DGPF).
+
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/nshaud)
