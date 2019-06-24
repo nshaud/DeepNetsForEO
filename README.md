@@ -32,6 +32,8 @@ Our example models are trained on the [ISPRS Vaihingen dataset](http://www2.ispr
 
 You can either use our script from the `OSM` folder (based on the [Maperitive](http://maperitive.net/) software) to generate OpenStreetMap rasters from the images, or download the OSM tiles from Potsdam [here](https://drive.google.com/open?id=0B8XVGOkhuqDTdGNibWJPeTcxLVE).
 
+The nDSM for the Vaihingen dataset is available [here](https://drive.google.com/open?id=1R4p4F2-6Ks3CeFo4qBPjcBRDNnoW9zuG) (courtesy of Markus Gerke, see also his [webpage](https://www.researchgate.net/publication/270104315_Normalized_DSM_-_heights_encoded_in_dm_-_see_report_for_details)).
+
 ### How to start
 
 Just run the `SegNet_PyTorch_v2.ipynb` notebook using [Jupyter](https://jupyter.org/)!
