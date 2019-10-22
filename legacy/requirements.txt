@@ -5,7 +5,7 @@ scipy==0.18.0
 tqdm==4.8.1
 protobuf==3.0.0
 Cython==0.24.1
-Pillow==3.3.1
+Pillow==6.2.0
 scikit_image==0.12.3
 scikit_learn==0.17.1
 pydot==1.2.2
